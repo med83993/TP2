@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Eloquent JavaScript, 3rd Edition",
+    "author": "Marijn Haverbeke",
+    "image": "images/eloquent_javascript.jpg",
+    "description": "A modern, deep-dive introduction to programming, focusing on JavaScript and web browsers.",
+    "rating": 4.6
+  },
+  {
+    "id": 2,
+    "title": "You Don't Know JS Yet: Get Started",
+    "author": "Kyle Simpson",
+    "image": "images/ydkjs.jpg",
+    "description": "An in-depth exploration of the core mechanisms of the JavaScript language.",
+    "rating": 4.7
+  },
+  {
+    "id": 3,
+    "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+    "author": "Aurélien Géron",
+    "image": "images/hands_on_ml.jpeg",
+    "description": "A practical guide to building intelligent systems using popular machine learning frameworks.",
+    "rating": 4.8
+  },
+  {
+    "id": 4,
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "image": "images/ddia.jpeg",
+    "description": "The definitive guide to the concepts and architecture of modern scalable data systems.",
+    "rating": 4.9
+  },
+  {
+    "id": 5,
+    "title": "Clean Architecture",
+    "author": "Robert C. Martin",
+    "image": "images/clean_architecture.jpg",
+    "description": "A craftsman's guide to software structure and design for building robust applications.",
+    "rating": 4.5
+  }
+]

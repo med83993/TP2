@@ -1,0 +1,4 @@
+[  
+  { "bookId": 1, "name": "Lucas", "rating": 5, "comment": "Un chef-d'œuvre absolu !" },  
+  { "bookId": 2, "name": "Marie", "rating": 4, "comment": "Très instructif." }  
+] 
