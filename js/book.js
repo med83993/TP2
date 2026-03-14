@@ -16,10 +16,11 @@ async function loadBookData() {
         
         if (monLivre !== null) {
             displayLivre(monLivre);
+            await initReviews();
+            displayReviews();
+        } else {
+            afficherErreurLivreIntrouvable();
         }
-        
-        await initReviews();
-        displayReviews();
         
     } catch (error) {
         console.error("Erreur de chargement du livre", error);
@@ -55,6 +56,25 @@ function displayLivre(book) {
     
     container.appendChild(image);
     container.appendChild(info);
+}
+
+function afficherErreurLivreIntrouvable() {
+    const container = document.getElementById("book-details");
+    
+    // On vide le conteneur principal et on affiche le message d'erreur
+    container.innerHTML = `
+        <div style="text-align: center; width: 100%; padding: 3rem 1rem;">
+            <h2 style="font-size: 4rem; margin-bottom: 1rem; text-transform: uppercase;">Erreur 404</h2>
+            <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 2rem;">Mince ! Ce livre n'existe pas ou a été supprimé.</p>
+            <a href="index.html" class="btn">RETOURNER AU CATALOGUE</a>
+        </div>
+    `;
+    
+    // On masque la section des avis car il n'y a pas de livre
+    const sectionAvis = document.querySelector(".reviews-section");
+    if (sectionAvis !== null) {
+        sectionAvis.style.display = "none";
+    }
 }
 
 // Fonction pour récupérer les données du JSON et les mettre dans localStorage pour simuler la BD
