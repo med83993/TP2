@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Livre</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="book-page">
+    <header class="navbar">
+        <a href="index.html" class="btn">RETOUR</a>
+        <h1 class="logo">LE LIVRE</h1>
+    </header>
+    <main class="book-container">
+        <div id="book-details" class="book-card"></div>
+        
+        <section class="reviews-section">
+            <h2>AVIS DES LECTEURS</h2>
+            <div id="reviews-list"></div>
+            
+            <form id="add-review-form" class="review-form mt-4">
+                <h3>AJOUTER UN AVIS</h3>
+                <input type="text" id="reviewer-name" placeholder="VOTRE NOM" required>
+                <input type="number" id="review-rating" min="1" max="5" placeholder="NOTE / 5" required>
+                <textarea id="review-comment" placeholder="VOTRE COMMENTAIRE" required></textarea>
+                <button type="submit" class="btn btn-submit">ENVOYER</button>
+            </form>
+        </section>
+    </main>
+    <script src="js/book.js"></script>
+</body>
+</html>
