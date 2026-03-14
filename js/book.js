@@ -65,7 +65,7 @@ function afficherErreurLivreIntrouvable() {
     container.innerHTML = `
         <div style="text-align: center; width: 100%; padding: 3rem 1rem;">
             <h2 style="font-size: 4rem; margin-bottom: 1rem; text-transform: uppercase;">Erreur 404</h2>
-            <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 2rem;">Mince ! Ce livre n'existe pas ou a été supprimé.</p>
+            <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 2rem;">Ce livre n'existe pas ou a été supprimé.</p>
             <a href="index.html" class="btn">RETOURNER AU CATALOGUE</a>
         </div>
     `;
